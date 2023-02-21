@@ -1,0 +1,22 @@
+
+.bebe-cows {
+	--bg-color: #183b24;
+	--bg-color-caption: #3B1B18;
+	--color-header: #F0A04B;
+	//--color-caption: #E1EEDD;
+	--color-caption: #FEFBE9;
+}
+
+// sass map to store breakpoints
+// if 1rem = 16px => { 576px = 36em; 768px = 48em; 992px = 62em; 1200px = 75em; }
+$media-queries-up: (
+	small: (
+		"breakpoint": 'min-width: 36em',
+	),
+	medium: (
+		"breakpoint": 'min-width: 48em',
+	),
+	large: (
+		"breakpoint": 'min-width: 62em'
+	)
+);

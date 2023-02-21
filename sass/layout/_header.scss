@@ -1,0 +1,39 @@
+.bebe-cows__header {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0.5em;
+	
+	> a {
+		display: block;
+		flex: 1;
+		img {
+			display: block;
+			max-width:30%;
+			margin:0 auto;
+			border-radius: 50%;
+		}
+	}
+	&--wrapper {
+		flex: 2;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
+}
+
+@include media-query-up(small) {
+	.bebe-cows__header {
+		flex-direction: row;
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+@include media-query-up(medium) {
+	.bebe-cows__header {
+		margin-bottom: 1em;
+	}
+}
