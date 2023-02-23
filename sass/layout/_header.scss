@@ -1,11 +1,14 @@
 .bebe-cows-header {
 	display: flex;
 	flex-direction: column;
-	.bebe-cows__picture {
+	padding: 0.5em;
+	.bebe-cows-header__picture {
 		flex: 1;
 		justify-content: center;
 		text-align: center;
+		
 		img {
+			display: block;
 			max-width:30%;
 			margin:0 auto;
 			border-radius: 50%;
@@ -13,7 +16,7 @@
 			
 		}
 	}
-	.bebe-cows__title {
+	.bebe-cows-header__title {
 		flex: 2;
 		display: flex;
 		flex-direction: column;
@@ -28,11 +31,14 @@
 	.bebe-cows-header {
 		flex-direction: row;
 		margin: 0;
-		img {
+		&__picture img {
 			max-width: 100%;
 		}
-		.bebe-cows__title {
+		&__title {
 			margin:0;
+			// h2 {
+			// 	margin-top: 0;
+			// }
 		}
 	}
 	

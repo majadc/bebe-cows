@@ -1,3 +1,5 @@
+// font family size and decorations, line-height
+
 .bebe-cows {
 
 	h2, h3 {
@@ -17,8 +19,6 @@
 		font-family: var(--font-caption);
 		font-size: 1rem;
 		line-height: 1.1;
-		text-align: center;
-		justify-content: center;
 		a {
 			text-decoration: none;
 		}

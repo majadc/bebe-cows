@@ -2,7 +2,7 @@
 	background-color: var(--bg-color);
 }
 
-.bebe-cows-header {
+.bebe-cows-header__title {
 	h2 {
 		color: var(--color-header);
 	}
@@ -13,7 +13,8 @@
 	}
 }
 
-.bebe-cows__gallery {
+.bebe-cows-gallery {
+	&__item
 	figcaption {
 		background-color: var(--bg-color-caption);
 		color: var(--color-caption);
