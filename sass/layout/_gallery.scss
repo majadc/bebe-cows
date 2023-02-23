@@ -1,0 +1,46 @@
+
+.bebe-cows__gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 1fr);
+	grid-auto-rows: 1;
+	grid-gap: 0.5em;
+	grid-auto-flow: dense;
+	padding: 0.5em;
+
+	figure {
+		display: flex;
+		flex-direction: column;
+
+	}
+	figcaption {
+		display: flex;
+		padding: 0.25em;
+	}
+
+	img {
+		display: block;
+		max-width: 100%;
+		object-fit: cover;
+		flex: 1;
+	}
+}
+
+@include media-query-up(small) {
+
+	.bebe-cows {
+		h2 {
+			margin-top: 0;
+		}
+	}
+
+	.bebe-cows__gallery {
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+		figure:nth-child(even) {
+			grid-column: span 2;
+			grid-row: span 2;
+	
+			
+		}
+	}
+}

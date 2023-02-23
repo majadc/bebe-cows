@@ -1,22 +1,12 @@
-
-.bebe-cows__container {
-
+.bebe-cows {
 	* {
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
 	}
+}
 
+.bebe-cows-container {
 	width: 75%;
 	margin: 0 auto;
-	padding: 0.5em;
-
 }
-
-
-.bebe-cows__gallery {
-	figcaption a {
-		text-decoration: none;
-	}
-}
-

@@ -1,20 +1,15 @@
-.bebe-cows__container {
+.bebe-cows-container {
 	background-color: var(--bg-color);
 }
 
-.bebe-cows__header {
+.bebe-cows-header {
 	h2 {
 		color: var(--color-header);
 	}
 	h3 {
-		color: var(--color-header);
-		@supports ( background-clip: text ) or ( -webkit-background-clip: text ) {
-			background-image: linear-gradient(to right, var(--bg-color-caption) 10%, var(--color-header) 100%);
-			background-clip: text;
-			-webkit-background-clip: text;
-			color: transparent;
-			
-		}
+		background-image: linear-gradient(to right, var(--bg-color-caption) 10%, var(--color-header) 100%);
+		background-clip: text;
+		color: transparent;
 	}
 }
 

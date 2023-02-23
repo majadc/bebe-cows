@@ -1,7 +1,8 @@
-@mixin media-query-up ($size) {
+// mixin media query
+@mixin media-query-up($size) {
 	@each $item, $value in $media-queries-up {
-		@if ( $item == $size ) {
-			@if ( map-get($value, 'breakpoint') != null ) {
+		@if $item == $size {
+			@if map-get($value, 'breakpoint') {
 				@media only screen and (#{map-get($value, "breakpoint")}) {
 					@content;
 				}
