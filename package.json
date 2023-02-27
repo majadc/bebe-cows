@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-	"stylelint": "stylelint \"sass/**/*.scss\"",
+    "stylelint": "stylelint \"sass/**/*.scss\"",
     "watch:sass": "sass --watch sass/style.scss:css/style_bebe-cows.css",
     "compile:sass": "sass sass/style.scss css/style.comp.css",
     "prefix:css": "postcss css/style.comp.css --use autoprefixer -o css/style.prefix.css",
