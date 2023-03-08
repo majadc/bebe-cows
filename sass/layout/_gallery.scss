@@ -2,7 +2,7 @@
 .bebe-cows-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, 1fr);
-  grid-auto-rows: 1;
+  grid-auto-rows: 1fr;
   grid-gap: 0.5em;
   grid-auto-flow: dense;
   padding:0 0.5em 0.5em;
