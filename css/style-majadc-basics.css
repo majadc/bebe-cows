@@ -1,0 +1,352 @@
+html {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(38deg, 100%, 87%);
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: "Raleway", "Open Sans", Tahoma, "Geneva", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: hsl(330deg, 5%, 7%);
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: underline;
+  color: hsl(353deg, 72%, 45%);
+}
+a:hover, a:active, a:focus {
+  text-decoration: none;
+  color: hsl(195deg, 72%, 45%);
+}
+
+p {
+  margin: 1.5em 0 1em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", "Impact", "Roboto Condensed", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 1.5em 0 1em 0;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0 0 1em 0;
+}
+
+h2 {
+  font-size: 1.65rem;
+}
+
+h3 {
+  font-size: 1.55rem;
+}
+
+h4 {
+  font-size: 1.45rem;
+}
+
+h5, label {
+  font-size: 1.35rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+img[class*=align],
+img[class*=wp-image-] {
+  height: auto;
+}
+
+img.size-full {
+  display: block;
+  margin: 0 auto;
+  max-width: 97.5%;
+  height: auto !important;
+  width: auto !important;
+}
+
+pre + p {
+  margin: 1em 0;
+}
+
+hr {
+  content: "";
+  display: block;
+  width: calc(100% + 4rem);
+  height: 6px;
+  margin: 0 auto;
+  background-color: hsl(38deg, 100%, 87%);
+  box-shadow: inset 0 0 6px 3.5px rgba(255, 241, 219, 0.6);
+  border-radius: 5px;
+  margin: 2rem -2rem 1rem;
+  border: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+pre {
+  overflow: auto;
+  font-family: "Baloo Chettan 2", "Consolas", "Monaco", "Andale Mono", "Ubuntu Mono", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 1.5em 0 1em;
+  max-width: 100%;
+  overflow: auto;
+  color: hsl(330deg, 5%, 7%);
+  box-shadow: -1rem 0 0 1px rgba(199, 134, 31, 0.2);
+}
+
+code, kbd, tt, var {
+  font-family: "Baloo Chettan 2", "Consolas", "Monaco", "Andale Mono", "Ubuntu Mono", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+pre:not([class*=language-]) {
+  background-image: linear-gradient(to bottom, transparent 90%, hsla(222deg, 25%, 21%, 0.07) 10%), linear-gradient(to right, hsl(39deg, 100%, 96%) 90%, hsla(222deg, 25%, 21%, 0.07) 10%);
+  background-size: 10px 10px, 10px 10px;
+  padding: 1em;
+}
+
+code:not([class*=language-]) {
+  padding: 0 3px;
+  background: hsl(195deg, 72%, 45%);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: hsl(39deg, 100%, 96%);
+}
+
+pre code:not([class*=language-]) {
+  background: transparent;
+  color: hsl(330deg, 5%, 7%);
+}
+
+@media only screen and (min-width: 48em) {
+  body {
+    font-size: 1.1rem;
+  }
+  input, textarea, select, select option {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width: 62em) {
+  body {
+    font-size: 1.2rem;
+  }
+  input, textarea, select, select option {
+    font-size: 1.1rem;
+  }
+  h1 {
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  h4 {
+    font-size: 1.6rem;
+  }
+  h5, label {
+    font-size: 1.4rem;
+  }
+  h6 {
+    font-size: 1.3rem;
+  }
+}
+/*
+ * Hide visually and from screen readers
+ */
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+  *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+input, textarea, select, select option {
+  font-family: "Baloo Chettan 2", "Consolas", "Monaco", "Andale Mono", "Ubuntu Mono", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+select, select option, input[type=text], input[type=email], input[type=url] {
+  line-height: 1.7;
+}
+
+label {
+  font-family: "Oswald", "Impact", "Roboto Condensed", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: hsl(353deg, 100%, 6%);
+  line-height: 1;
+  padding: 0 0.5em 0 0;
+  font-size: 1rem;
+}
+
+input, textarea {
+  border: none;
+}
+
+textarea, input[type=text], input[type=email], input[type=url] {
+  background: hsl(39deg, 100%, 96%);
+  box-shadow: inset 0 0 1rem 0 rgba(255, 241, 219, 0.2);
+  color: hsl(353deg, 100%, 6%);
+  border-radius: 2px;
+}
+textarea:focus, input[type=text]:focus, input[type=email]:focus, input[type=url]:focus {
+  box-shadow: none;
+  outline: 1px solid hsl(353deg, 100%, 6%);
+}
+
+input[type=text], input[type=email], input[type=url] {
+  background: hsl(39deg, 100%, 96%);
+  box-shadow: inset 0 0 1rem 0 rgba(255, 241, 219, 0.5);
+  padding: 0 0.5em;
+}
+
+textarea {
+  padding: 1em;
+}
+textarea:focus {
+  background-color: hsl(353deg, 100%, 6%);
+  color: hsl(39deg, 100%, 96%);
+  box-shadow: none;
+  outline: none;
+}
+
+input[type=submit] {
+  display: block;
+  padding: 0.4em 0.5em;
+  color: hsl(39deg, 100%, 96%);
+  font-family: "Oswald", "Impact", "Roboto Condensed", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background-color: hsl(353deg, 72%, 45%);
+  border-radius: 2px;
+  transition: all 0.05s;
+  cursor: pointer;
+}
+input[type=submit]:hover, input[type=submit]:active, input[type=submit]:focus {
+  box-shadow: 0 0 10px 0 rgba(31, 0, 4, 0.8);
+  background-color: hsl(353deg, 100%, 6%);
+  transform: scale(1.02);
+}
+
+select, select option {
+  background: hsl(39deg, 100%, 96%);
+  color: hsl(353deg, 100%, 6%);
+  padding: 0 0.5em;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, img {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=style-majadc-basics.css.map */

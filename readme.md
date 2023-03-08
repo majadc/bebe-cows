@@ -1,6 +1,6 @@
 # The gallery based on the CSS grid layout.
 
-The columns are set in grid tracks (the grid is explicit).
+The columns are set in explicit grid tracks.
 The rows are built with implicit grid so the layout isn't structured for fixed number of pictures.
 ```
 .grid-layout {

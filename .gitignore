@@ -1,7 +1,3 @@
 bebe-cows.code-workspace
 node_modules
 img
-
-css/*
-!css/style_*.css
-!css/style_*.css.map

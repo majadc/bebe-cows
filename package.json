@@ -6,14 +6,16 @@
   "scripts": {
     "stylelint": "stylelint \"sass/**/*.scss\"",
     "watch:sass": "sass --watch sass/style.scss:css/style_bebe-cows.css",
-    "compile:sass": "sass sass/style.scss css/style.comp.css",
-    "prefix:css": "postcss css/style.comp.css --use autoprefixer -o css/style.prefix.css",
-    "compress:css": "sass --style=compressed css/style.prefix.css css/style_bebe-cows.css",
+    "compile:sass": "sass sass/style.scss css/style_bebe-cows.css",
+    "prefix:css": "postcss css/style_bebe-cows.css --use autoprefixer -o css/style_bebe-cows.css",
+    "compress:css": "cleancss --source-map -o css/style_bebe-cows.css css/style_bebe-cows.css",
     "build:css": "npm-run-all compile:sass  prefix:css compress:css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "clean-css": "^5.3.2",
+    "clean-css-cli": "^5.6.2",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
