@@ -1,0 +1,15 @@
+.bebe-cows-footer {
+  padding: 1em 0;
+  font-size: 1.5rem;
+  p {
+    text-align: center;
+  }
+  a {
+    color: var(--color-caption);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      color: var(--color-header-secondary);
+    }
+  }
+}
